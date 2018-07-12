@@ -1,0 +1,49 @@
+<!-- HTML -->
+<html>
+  <head>
+      <title>FinalBlog</title>
+      <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" href="css/blog.css">
+      <link rel="fav icon" type="image/png" href="images/favicon.png"/>
+      <script src="js/vue.js"></script>
+  </head>
+
+  <body>
+    <!-- APP -->
+        <div id="app">
+
+          <div id="content">
+            <!-- HEADER HERE -->
+            <span class="blogTitle">
+              <img class="topPadding" src="images/blog/logoBlack.png"> // EVERYTHING "IMPORTANT"
+              <span class="textContent">
+                <br><a href="index.html" target="blank"> CHECK OUR WEBSITE </a>
+              </span>
+            </span>
+
+            <!-- CONTENT HERE -->
+
+            <!-- HOW TO LINK ACTIONS -->
+              <span class="textTitle" v-on:click="showFirstMessage = !showFirstMessage">
+                24.2.2018 // I guess first news is this...
+              </span>
+
+                <div class="textContent-container" v-if="showFirstMessage">
+                  <span class="textContent">
+                    So it's about being clever and smart and not a big boy.
+                  </span>
+                </div>
+
+          </div>
+        </div>
+  </body>
+</html>
+
+<script>
+new Vue({
+  el: '#app',
+  data: {
+    showFirstMessage: true,
+  }
+})
+</script>

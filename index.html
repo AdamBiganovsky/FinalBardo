@@ -1,0 +1,231 @@
+<!-- HTML -->
+<html>
+  <head>
+      <title>FinalBardo</title>
+      <link rel="stylesheet" href="css/index.css">
+      <link rel="fav icon" type="image/png" href="images/favicon.png"/>
+      <script src="js/vue.js"></script>
+  </head>
+  <body>
+
+    <!-- APP -->
+        <div id="app">
+
+            <!-- HEADER -->
+            <div id="header-container">
+
+                <!-- logo -->
+                <div id="header-left-container">
+                    <div class="icon-container">
+                        <img src="images/header/logo.png" @click="selectedHomepage()">
+                    </div>
+                </div>
+
+                <!-- social menu -->
+                <div id="header-right-container">
+                  <!-- WG37 -->
+                  <div class="icon-container margin-left">
+                    <a href="weeglab.html" target="_blank">
+                      <span class="content"> WG37 </span>
+                    </a>
+                  </div>
+                  <!-- FACEBOOK ICO -->
+                    <div class="icon-container margin-left">
+                      <a href="https://www.facebook.com/FinalBardo-176746602994912/" target="_blank">
+                        <img src="images/header/facebook_ico.png">
+                      </a>
+                    </div>
+                    <!-- TWITTER ICO -->
+                    <div class="icon-container margin-left">
+                        <a href="https://twitter.com/FinalBardo" target="_blank">
+                          <img src="images/header/twitter_ico.png">
+                        </a>
+                    </div>
+                    <!-- INSTAGRAM ICO -->
+                    <div class="icon-container margin-left">
+                      <a href="https://www.instagram.com/finalbardo/" target="_blank">
+                        <img src="images/header/instagram_ico.png">
+                      </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENT -->
+            <div id="content-container">
+
+              <!-- HOMEPAGE -->
+                <div id="homepage" v-bind:style="styleHomepage">
+                  <div class="product-container">
+                    <div class="textContent-container Center">
+                      <div class="textTitle">
+                        <span class="mainTitle"> THE BOX </span>
+                      </div>
+                      <div class="textContent">
+                        <span class="content">COMMING SOON</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              <!-- PRODUCTS -->
+                <div id="products" v-bind:style="styleProducts">
+                  <!-- THE BOX -->
+                  <div class="product-container">
+                    <div class="textContent-container Center">
+                      <div class="textTitle">
+                        <span class="mainTitle"> THE BOX </span>
+                      </div>
+                      <div class="textContent">
+                        <span class="content">Our past lays in our future</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              <!-- OUTSOURCE -->
+                <div id="outsource" v-bind:style="styleOutsource">
+
+                  <div class="textContent-container HorizontalCenter">
+                    <div class="textTitle">
+                      <span class="mainTitle"> CAN WE HELP YOU? </span>
+                    </div>
+                    <div class="textContent">
+                      <span class="content">
+                      We are not driven by amount of money or big names, we are driven by interesting projects.
+                      <br>
+                      If you have some give us know.
+                      <br>
+                      <br>
+                      Contact us at <span class="interactiveColor"> Outsource@finalbardo.com </span> and get full portfolio of our works.
+                      <br>
+                      <span class="content small">We provide solutions for art direction, concept art, illustration and visual design - ui, fui, ux, motion</span>
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              <!-- CONTACT -->
+                <div id="contact" v-bind:style="styleContact">
+                  <div class="textContent-container HorizontalCenter">
+                    <div class="textTitle">
+                      <span class="mainTitle"> GET IN TOUCH </span>
+                    </div>
+                    <div class="textContent">
+                      <span class="content">
+                      If you wish you can contact us at
+                      <br>
+                      <span class="interactiveColor"> info@finalbardo.com </span>
+                      <br>
+                      <br>
+                      for outsource inquiries contact us at
+                      <br>
+                      <span class="interactiveColor"> outsource@finalbardo.com </span>
+                      </span>
+                    </div>
+
+                  </div>
+                </div>
+
+            </div>
+
+            <!-- nav menu -->
+            <div id="nav-menu-container">
+
+                <button @click="selected = 1; selectedProducts()" :class="{navMenu, highlight:selected == 1}">PRODUCTS</button>
+                <button @click="selected = 2; selectedOutsource()" :class="{navMenu, highlight:selected == 2}">OUTSOURCE</button>
+                <button @click="selected = 3; selectedContact()" :class="{navMenu, highlight:selected == 3}">CONTACT</button>
+
+            </div>
+
+            <!-- NEWSLETTERS -->
+            <a href="blog.html">
+            <div id="newsletters-container">
+              CHECK OUR BLOG
+            </div>
+            </a>
+
+        </div>
+
+    </body>
+</html>
+
+<!-- SCRIPTS -->
+<script>
+var products = new Vue({
+el: '#app',
+    data: {
+
+        selected: undefined,
+        navMenu: 'navMenu',
+
+        styleProducts: {
+            opacity: '0',
+        },
+
+        styleOutsource: {
+            opacity: '0',
+        },
+
+        styleContact: {
+            opacity: '0',
+        },
+
+        styleHomepage: {
+            opacity: '1',
+        },
+    },
+
+    methods: {
+      selectedHomepage: function(){
+        if (this.styleHomepage.opacity == '0') {
+          console.log("playing selectedProducts function here"),
+          this.styleHomepage.opacity = '1',
+          this.styleProducts.opacity = '0',
+          this.styleOutsource.opacity = '0',
+          this.styleContact.opacity = '0'
+        }
+      },
+
+      selectedProducts: function(){
+        if (this.styleProducts.opacity == '0') {
+          console.log("playing selectedProducts function here"),
+          this.styleHomepage.opacity = '0',
+          this.styleProducts.opacity = '1',
+          this.styleOutsource.opacity = '0',
+          this.styleContact.opacity = '0'
+        }
+      },
+
+      selectedOutsource: function(){
+        if (this.styleOutsource.opacity == '0') {
+          console.log("playing selectedOutsource function here"),
+          this.styleHomepage.opacity = '0',
+          this.styleProducts.opacity = '0',
+          this.styleOutsource.opacity = '1',
+          this.styleContact.opacity = '0'
+        }
+      },
+
+      selectedContact: function(){
+        if (this.styleContact.opacity == '0') {
+          console.log("playing selectedOutsource function here"),
+          this.styleHomepage.opacity = '0',
+          this.styleProducts.opacity = '0',
+          this.styleOutsource.opacity = '0',
+          this.styleContact.opacity = '1'
+        }
+      },
+
+      activeTab: function(activeButton){
+        console.log("playing activeTab function here"),
+
+        document.getElementById('productsButton').classList.remove(" selected"),
+        document.getElementById('outsourceButton').className.replace(" selected", ""),
+        document.getElementById('contactButton').className.replace(" selected", ""),
+
+        document.getElementById(activeButton).className += " selected"
+      },
+  }
+})
+</script>

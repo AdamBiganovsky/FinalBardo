@@ -1,0 +1,362 @@
+//FONTS
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fonts/Bebas.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Bebas.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Bebas.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/Bebas.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/Bebas.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../fonts/BebasNeue.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/BebasNeue.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/BebasNeue.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/BebasNeue.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/BebasNeue.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+// VARIABLES
+
+//COLORS
+$interactive-color: #00ffa8;
+$content-color: #ffffff;
+
+//FONT-STYLES
+$mainTitle: 50px;
+$title: 24px;
+$content: 22px;
+$contentSmall: 16px;
+
+// ---------------------------- RESET ----------------------------
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  text-decoration: none;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	color: $content-color;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// ---------------------------- RESET ----------------------------
+
+//  COLORS
+.interactiveColor {
+  color: $interactive-color;
+}
+
+// ANIMS
+$transitionNavTabs: opacity 0.65s ease-out;
+
+$transitionTextContent: opacity 0.2s ease-in-out;
+
+//BUTTONS
+
+button.navMenu {
+  opacity: 0.5;
+  background: none;
+  border: none;
+  outline: none;
+
+  color: $content-color;
+	font-family: BebasNeue;
+	font-size: $title;
+
+  //animations
+  transition: $transitionNavTabs;
+}
+
+button.navMenu:hover {
+  opacity: 0.75;
+}
+
+button.navMenu.highlight {
+  opacity: 1;
+}
+
+//TYPO
+.mainTitle {
+  position: relative;
+  display: block;
+
+  padding-bottom: 7px;
+  margin-bottom: 3px;
+
+  color: $content-color;
+  font-family: BebasNeue;
+  font-size: $mainTitle;
+
+  text-align: center;
+
+  border-bottom: 1px solid rgba(white, 0.35);
+
+}
+
+.content {
+  color: $content-color;
+  font-family: BebasNeue;
+  font-size: $content;
+
+  letter-spacing: 0.2px;
+
+  text-align: center;
+}
+
+.content.small {
+  font-size: $contentSmall;
+}
+
+//DIVS
+//header
+#app {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+
+//MENU CONTAINERS
+
+#header-container {
+    position: relative;
+
+    width: 100%;
+    height: 100px;
+
+    background-color: black;
+}
+
+#header-left-container {
+	position: absolute;
+
+	left: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	width: auto;
+	height: auto;
+}
+
+.icon-container {
+	position: relative;
+	display: inline-block;
+
+	width: auto;
+	height: auto;
+}
+
+.icon-container.margin-left {
+	margin-left: 15px;
+}
+
+#header-right-container {
+	position: absolute;
+
+	right: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	width: auto;
+	height: auto;
+
+	padding-top: 2px;
+}
+
+//NAV MENU
+
+#nav-menu-container {
+	position: absolute;
+
+	top: 100px;
+
+	width: 100%;
+	height: 50px;
+
+  padding-top: 7px;
+  padding-left: 20px;
+
+	box-sizing: border-box;
+	border-top: 1px solid rgba(white, 0.1);
+	background-color: rgba(black, 0.5);
+
+  color: $content-color;
+  font-family: BebasNeue;
+  font-size: $title;
+}
+
+//CONTENT
+
+#content-container {
+  position: relative;
+
+  width: 100%;
+  height: calc(100% - 100px);
+
+	background-image: url("../images/mainBackground/placeholder.png");
+  background-position: center;
+
+  box-sizing: border-box;
+}
+
+.textContent-container {
+  position: absolute;
+  top: 42%;
+
+  text-align: center;
+}
+
+.textContent-container.VerticalCenter {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.textContent-container.HorizontalCenter {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.textContent-container.Center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textContent {
+
+}
+
+.textTitle {
+  display: inline-block;
+}
+
+.product-container {
+  position: relative;
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  box-sizing: border-box;
+}
+
+#homepage {
+  position: absolute;
+
+  top: 0px;
+
+  width: 100%;
+  height: 100%;
+
+  box-sizing: border-box;
+
+  //background-image: url("../images/mainBackground/main.jpg");
+  background-position: center;
+
+  //animations
+  transition: $transitionTextContent;
+}
+
+#products {
+  position: absolute;
+
+  top: 0px;
+
+  width: 100%;
+  height: 100%;
+
+  //background-image: url("../images/mainBackground/main.jpg");
+  background-position: center;
+
+  //animations
+  transition: $transitionTextContent;
+}
+
+#outsource {
+  position: absolute;
+
+  top: 0px;
+
+  width: 100%;
+  height: 100%;
+
+  //background-image: url("../images/mainBackground/main.jpg");
+  background-position: center;
+
+  //animations
+  transition: $transitionTextContent;
+}
+
+#contact {
+  position: absolute;
+
+  top: 0px;
+
+  width: 100%;
+  height: 100%;
+
+  //background-image: url("../images/mainBackground/main.jpg");
+  background-position: center;
+
+  //animations
+  transition: $transitionTextContent;
+}
+
+//NEWSLETTERS
+
+#newsletters-container {
+	position: absolute;
+
+	bottom: 25px;
+	right: 0px;
+
+	width: auto;
+	height: auto;
+
+	color: $interactive-color;
+	font-family: BebasNeue;
+	font-size: $content;
+
+	padding: 20px;
+	padding-top: 16px;
+
+	background-color: black;
+}

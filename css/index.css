@@ -1,0 +1,254 @@
+@font-face {
+  font-family: 'Bebas';
+  src: url("../fonts/Bebas.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Bebas.eot?#iefix") format("embedded-opentype"), url("../fonts/Bebas.woff2") format("woff2"), url("../fonts/Bebas.woff") format("woff"), url("../fonts/Bebas.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../fonts/BebasNeue.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/BebasNeue.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue.woff2") format("woff2"), url("../fonts/BebasNeue.woff") format("woff"), url("../fonts/BebasNeue.ttf") format("truetype"); }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  color: #ffffff; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.interactiveColor {
+  color: #00ffa8; }
+
+button.navMenu {
+  opacity: 0.5;
+  background: none;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-family: BebasNeue;
+  font-size: 24px;
+  -webkit-transition: opacity 0.65s ease-out;
+  -o-transition: opacity 0.65s ease-out;
+  transition: opacity 0.65s ease-out; }
+
+button.navMenu:hover {
+  opacity: 0.75; }
+
+button.navMenu.highlight {
+  opacity: 1; }
+
+.mainTitle {
+  position: relative;
+  display: block;
+  padding-bottom: 7px;
+  margin-bottom: 3px;
+  color: #ffffff;
+  font-family: BebasNeue;
+  font-size: 50px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35); }
+
+.content {
+  color: #ffffff;
+  font-family: BebasNeue;
+  font-size: 22px;
+  letter-spacing: 0.2px;
+  text-align: center; }
+
+.content.small {
+  font-size: 16px; }
+
+#app {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+#header-container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: black; }
+
+#header-left-container {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: auto;
+  height: auto; }
+
+.icon-container {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto; }
+
+.icon-container.margin-left {
+  margin-left: 15px; }
+
+#header-right-container {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+  padding-top: 2px; }
+
+#nav-menu-container {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 50px;
+  padding-top: 7px;
+  padding-left: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-family: BebasNeue;
+  font-size: 24px; }
+
+#content-container {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 100px);
+  background-image: url("../images/mainBackground/placeholder.png");
+  background-position: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.textContent-container {
+  position: absolute;
+  top: 42%;
+  text-align: center; }
+
+.textContent-container.VerticalCenter {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.textContent-container.HorizontalCenter {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.textContent-container.Center {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.textTitle {
+  display: inline-block; }
+
+.product-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#homepage {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-position: center;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out; }
+
+#products {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out; }
+
+#outsource {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out; }
+
+#contact {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out; }
+
+#newsletters-container {
+  position: absolute;
+  bottom: 25px;
+  right: 0px;
+  width: auto;
+  height: auto;
+  color: #00ffa8;
+  font-family: BebasNeue;
+  font-size: 22px;
+  padding: 20px;
+  padding-top: 16px;
+  background-color: black; }
+
+/*# sourceMappingURL=index.css.map */
