@@ -18,7 +18,7 @@
                 <!-- logo -->
                 <div id="header-left-container">
                     <div class="icon-container logoIcon">
-                        <img src="images/header/logo.svg" @click="selectedHomepage()">
+                        <img src="images/header/logo.svg" @click="selected = 0; selectedHomepage()" :class="{highlight:selected == 0}">
                     </div>
                 </div>
 
@@ -60,6 +60,7 @@
                     <div class="textContent-container Center">
                       <div class="textTitle">
                         <span class="mainTitle"> THE BOX </span>
+                        <img src="images/shared/line_300px.svg">
                       </div>
                       <div class="textContent">
                         <span class="content">COMMING SOON</span>
@@ -75,6 +76,7 @@
                     <div class="textContent-container Center">
                       <div class="textTitle">
                         <span class="mainTitle"> THE BOX </span>
+                        <img src="images/shared/line_300px.svg">
                       </div>
                       <div class="textContent">
                         <span class="content">Our past lays in our future</span>
@@ -89,6 +91,7 @@
                   <div class="textContent-container Center">
                     <div class="textTitle">
                       <span class="mainTitle"> CAN WE HELP YOU? </span>
+                      <img src="images/shared/line_300px.svg">
                     </div>
                     <div class="textContent">
                       <span class="content">
@@ -96,8 +99,9 @@
                       If you have some give us know.
                       <br>
                       <br>
-                      Contact us at <span class="interactiveColor"> Outsource@finalbardo.com </span><br> and get full portfolio of our works.
-                      <br><br>
+                      Contact us at <span class="interactiveColor"> Outsource@finalbardo.com </span> and get full portfolio of our works.
+                      <br>
+                      <br>
                       <span class="content small">We provide solutions for art direction, concept art, illustration and visual design - ui, fui, ux, motion</span>
                       </span>
                     </div>
@@ -110,6 +114,7 @@
                   <div class="textContent-container Center">
                     <div class="textTitle">
                       <span class="mainTitle"> GET IN TOUCH </span>
+                      <img src="images/shared/line_300px.svg">
                     </div>
                     <div class="textContent">
                       <span class="content">
