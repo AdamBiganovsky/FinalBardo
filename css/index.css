@@ -123,6 +123,14 @@ button.navMenu.highlight {
   width: auto;
   height: auto; }
 
+.icon-container.socialIcon {
+  width: 30px;
+  height: 40px; }
+
+.icon-container.logoIcon {
+  width: 66px;
+  height: 44px; }
+
 .icon-container.margin-left {
   margin-left: 15px; }
 
