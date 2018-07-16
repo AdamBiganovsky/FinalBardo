@@ -82,14 +82,14 @@ button.navMenu.highlight {
   margin-bottom: 3px;
   color: #ffffff;
   font-family: BebasNeue;
-  font-size: 50px;
+  font-size: 45px;
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.35); }
 
 .content {
   color: #ffffff;
   font-family: BebasNeue;
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: 0.2px;
   text-align: center; }
 
@@ -158,6 +158,7 @@ button.navMenu.highlight {
   height: calc(100% - 100px);
   background-image: url("../images/mainBackground/placeholder.png");
   background-position: center;
+  background-repeat: no-repeat;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -246,7 +247,7 @@ button.navMenu.highlight {
   height: auto;
   color: #00ffa8;
   font-family: BebasNeue;
-  font-size: 22px;
+  font-size: 20px;
   padding: 20px;
   padding-top: 16px;
   background-color: black; }

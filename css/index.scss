@@ -24,9 +24,9 @@ $interactive-color: #00ffa8;
 $content-color: #ffffff;
 
 //FONT-STYLES
-$mainTitle: 50px;
+$mainTitle: 45px;
 $title: 24px;
-$content: 22px;
+$content: 20px;
 $contentSmall: 16px;
 
 // ---------------------------- RESET ----------------------------
@@ -233,6 +233,7 @@ button.navMenu.highlight {
 
 	background-image: url("../images/mainBackground/placeholder.png");
   background-position: center;
+  background-repeat: no-repeat;
 
   box-sizing: border-box;
 }
