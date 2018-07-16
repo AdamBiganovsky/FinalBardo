@@ -82,7 +82,7 @@ button.navMenu.highlight {
   margin-bottom: 3px;
   color: #ffffff;
   font-family: BebasNeue;
-  font-size: 45px;
+  font-size: 40px;
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.35); }
 
@@ -195,7 +195,8 @@ button.navMenu.highlight {
   transform: translate(-50%, -50%); }
 
 .textTitle {
-  display: inline-block; }
+  display: inline-block;
+  width: 300px; }
 
 .product-container {
   position: relative;

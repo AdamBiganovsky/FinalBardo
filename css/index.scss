@@ -24,7 +24,7 @@ $interactive-color: #00ffa8;
 $content-color: #ffffff;
 
 //FONT-STYLES
-$mainTitle: 45px;
+$mainTitle: 40px;
 $title: 24px;
 $content: 20px;
 $contentSmall: 16px;
@@ -277,6 +277,8 @@ button.navMenu.highlight {
 
 .textTitle {
   display: inline-block;
+
+  width: 300px;
 }
 
 .product-container {
