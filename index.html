@@ -97,12 +97,11 @@
                       <span class="content">
                       We are not driven by amount of money or big names, we are driven by interesting projects.
                       If you have some give us know.
+                    </span>
                       <br>
-                      <br>
-                      Contact us at <span class="interactiveColor"> Outsource@finalbardo.com </span> and get full portfolio of our works.
+                      <span class="content">Contact us at <span class=" content interactiveColor"> Outsource@finalbardo.com </span> and get full portfolio of our works.</span>
                       <br>
                       <span class="content small">We provide solutions for art direction, concept art, illustration and visual design - ui, fui, ux, motion</span>
-                      </span>
                     </div>
                   </div>
 
@@ -116,16 +115,15 @@
                       <img src="images/shared/line_300px.svg">
                     </div>
                     <div class="textContent">
-                      <span class="content">
-                      If you wish you can contact us at
+                      <span class="content">If you wish you can contact us at</span>
                       <br>
-                      <span class="interactiveColor"> info@finalbardo.com </span>
+                      <span class="content interactiveColor"> info@finalbardo.com </span>
                       <br>
                       <br>
-                      for outsource inquiries contact us at
+                      <span class="content">for outsource inquiries contact us at</span>
                       <br>
-                      <span class="interactiveColor"> outsource@finalbardo.com </span>
-                      </span>
+                      <span class="content interactiveColor"> outsource@finalbardo.com </span>
+
                     </div>
 
                   </div>
@@ -183,7 +181,6 @@ el: '#app',
     methods: {
       selectedHomepage: function(){
         if (this.styleHomepage.opacity == '0') {
-          console.log("playing selectedProducts function here"),
           this.styleHomepage.opacity = '1',
           this.styleProducts.opacity = '0',
           this.styleOutsource.opacity = '0',
@@ -193,7 +190,6 @@ el: '#app',
 
       selectedProducts: function(){
         if (this.styleProducts.opacity == '0') {
-          console.log("playing selectedProducts function here"),
           this.styleHomepage.opacity = '0',
           this.styleProducts.opacity = '1',
           this.styleOutsource.opacity = '0',
@@ -203,7 +199,6 @@ el: '#app',
 
       selectedOutsource: function(){
         if (this.styleOutsource.opacity == '0') {
-          console.log("playing selectedOutsource function here"),
           this.styleHomepage.opacity = '0',
           this.styleProducts.opacity = '0',
           this.styleOutsource.opacity = '1',
@@ -213,7 +208,6 @@ el: '#app',
 
       selectedContact: function(){
         if (this.styleContact.opacity == '0') {
-          console.log("playing selectedOutsource function here"),
           this.styleHomepage.opacity = '0',
           this.styleProducts.opacity = '0',
           this.styleOutsource.opacity = '0',
@@ -222,7 +216,6 @@ el: '#app',
       },
 
       activeTab: function(activeButton){
-        console.log("playing activeTab function here"),
 
         document.getElementById('productsButton').classList.remove(" selected"),
         document.getElementById('outsourceButton').className.replace(" selected", ""),

@@ -37,7 +37,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  color: #ffffff; }
+  color: #272727; }
 
 ol, ul {
   list-style: none; }
@@ -54,15 +54,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.interactiveColor {
-  color: #00ffa8; }
-
 button.navMenu {
   opacity: 0.5;
   background: none;
   border: none;
   outline: none;
-  color: #ffffff;
+  color: white;
   font-family: BebasNeue;
   font-size: 24px;
   -webkit-transition: opacity 0.65s ease-out;
@@ -78,18 +75,26 @@ button.navMenu.highlight {
 .mainTitle {
   position: relative;
   display: block;
-  padding-bottom: 7px;
-  color: #ffffff;
+  color: #f2f2f2;
+  padding-bottom: 9px;
   font-family: BebasNeue;
   font-size: 40px;
-  text-align: center; }
+  text-align: center;
+  background-color: black; }
 
 .content {
-  color: #ffffff;
   font-family: BebasNeue;
   font-size: 20px;
+  color: #272727;
   letter-spacing: 0.2px;
-  text-align: center; }
+  background-color: white;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.content.interactiveColor {
+  color: #b0a283; }
 
 .content.small {
   font-size: 16px; }
@@ -154,7 +159,7 @@ button.navMenu.highlight {
   box-sizing: border-box;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   background-color: rgba(0, 0, 0, 0.5);
-  color: #ffffff;
+  color: #f2f2f2;
   font-family: BebasNeue;
   font-size: 24px; }
 
@@ -162,7 +167,7 @@ button.navMenu.highlight {
   position: relative;
   width: 100%;
   height: calc(100% - 100px);
-  background-image: url("../images/mainBackground/placeholder.png");
+  background-image: url("../images/mainBackground/ubrum.png");
   background-position: center;
   background-repeat: no-repeat;
   -webkit-box-sizing: border-box;
@@ -255,7 +260,7 @@ button.navMenu.highlight {
   right: 0px;
   width: auto;
   height: auto;
-  color: #00ffa8;
+  color: #b0a283;
   font-family: BebasNeue;
   font-size: 20px;
   padding: 20px;
