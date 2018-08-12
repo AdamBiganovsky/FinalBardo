@@ -16,9 +16,12 @@
   /* IE9 Compat Modes */
   src: url("../fonts/blog/robotocondensed-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/blog/robotocondensed-regular-webfont.woff2") format("woff2"), url("../fonts/blog/robotocondensed-regular-webfont.woff") format("woff"), url("../fonts/blog/robotocondensed-regular-webfont.ttf") format("truetype"); }
 
+body {
+  background-color: white; }
+
 a {
   color: black;
-  background-color: #00ffa8;
+  background-color: #b0a283;
   text-decoration: none;
   padding-left: 3px;
   padding-right: 3px; }
@@ -54,7 +57,7 @@ a {
   margin-top: 2px;
   padding: 3px;
   font-size: 22px;
-  background-color: #00ffa8; }
+  background-color: #b0a283; }
 
 .textTitle.date {
   font-size: 16px; }

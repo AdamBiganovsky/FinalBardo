@@ -37,7 +37,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  color: #272727; }
+  color: #d2d2d2;
+  background-color: #050505; }
 
 ol, ul {
   list-style: none; }
@@ -76,22 +77,17 @@ button.navMenu.highlight {
   position: relative;
   display: block;
   color: #f2f2f2;
-  padding-bottom: 9px;
+  padding-bottom: 1px;
   font-family: BebasNeue;
   font-size: 40px;
-  text-align: center;
-  background-color: black; }
+  text-align: center; }
 
 .content {
   font-family: BebasNeue;
   font-size: 20px;
-  color: #272727;
+  color: #d2d2d2;
   letter-spacing: 0.2px;
-  background-color: white;
-  text-align: center;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px; }
+  text-align: center; }
 
 .content.interactiveColor {
   color: #b0a283; }
@@ -157,7 +153,6 @@ button.navMenu.highlight {
   padding-left: 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
   background-color: rgba(0, 0, 0, 0.5);
   color: #f2f2f2;
   font-family: BebasNeue;
@@ -167,7 +162,6 @@ button.navMenu.highlight {
   position: relative;
   width: 100%;
   height: calc(100% - 100px);
-  background-image: url("../images/mainBackground/ubrum.png");
   background-position: center;
   background-repeat: no-repeat;
   -webkit-box-sizing: border-box;

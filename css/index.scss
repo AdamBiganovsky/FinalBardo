@@ -21,8 +21,8 @@
 
 //COLORS
 $interactive-color: #b0a283;
-$content-color: #272727;
-$title-color: #f2f2f2;
+$content-color-light: #d2d2d2;
+$title-color-light: #f2f2f2;
 
 //FONT-STYLES
 $mainTitle: 40px;
@@ -60,7 +60,14 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	color: $content-color;
+	color: $content-color-light;
+
+  //background color
+  background-color: #050505;
+
+  //background image
+  //background: url(../images/mainBackground/placeholder.png) no-repeat center center fixed;
+  //background-size: cover;
 }
 ol, ul {
 	list-style: none;
@@ -113,29 +120,23 @@ button.navMenu.highlight {
 .mainTitle {
   position: relative;
   display: block;
-  color: $title-color;
+  color: $title-color-light;
 
-  padding-bottom: 9px;
+  padding-bottom: 1px;
 
   font-family: BebasNeue;
   font-size: $mainTitle;
 
   text-align: center;
-  background-color: black;
 }
 
 .content {
   font-family: BebasNeue;
   font-size: $content;
-  color: $content-color;
+  color: $content-color-light;
 
   letter-spacing: 0.2px;
-  background-color: white;
   text-align: center;
-
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
 }
 
 .content.interactiveColor {
@@ -226,10 +227,10 @@ button.navMenu.highlight {
   padding-left: 20px;
 
 	box-sizing: border-box;
-	border-top: 1px solid rgba(white, 0.1);
+
 	background-color: rgba(black, 0.5);
 
-  color: $title-color;
+  color: $title-color-light;
   font-family: BebasNeue;
   font-size: $title;
 }
@@ -242,9 +243,9 @@ button.navMenu.highlight {
   width: 100%;
   height: calc(100% - 100px);
 
-	background-image: url("../images/mainBackground/ubrum.png");
   background-position: center;
   background-repeat: no-repeat;
+
 
   box-sizing: border-box;
 }
@@ -302,7 +303,6 @@ button.navMenu.highlight {
 
   box-sizing: border-box;
 
-  //background-image: url("../images/mainBackground/main.jpg");
   background-position: center;
 
   //animations
@@ -317,7 +317,6 @@ button.navMenu.highlight {
   width: 100%;
   height: 100%;
 
-  //background-image: url("../images/mainBackground/main.jpg");
   background-position: center;
 
   //animations
@@ -332,7 +331,6 @@ button.navMenu.highlight {
   width: 100%;
   height: 100%;
 
-  //background-image: url("../images/mainBackground/main.jpg");
   background-position: center;
 
   //animations
@@ -347,7 +345,6 @@ button.navMenu.highlight {
   width: 100%;
   height: 100%;
 
-  //background-image: url("../images/mainBackground/main.jpg");
   background-position: center;
 
   //animations

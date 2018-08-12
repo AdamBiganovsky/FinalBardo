@@ -26,10 +26,14 @@
     url('../fonts/blog/robotocondensed-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
+body {
+  background-color: white;
+}
+
 //TYPO
 a{
   color: black;
-  background-color: #00ffa8;
+  background-color: #b0a283;
   text-decoration: none;
 
   padding-left: 3px;
@@ -78,7 +82,7 @@ a{
   padding: 3px;
 
   font-size: 22px;
-  background-color: #00ffa8;
+  background-color: #b0a283;
 }
 
 .textTitle.date {
