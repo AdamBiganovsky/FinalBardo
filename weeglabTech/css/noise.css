@@ -1,0 +1,95 @@
+@keyframes grain {
+  0%, 100% {
+    -moz-transform: translate(-13%, -8%);
+    -ms-transform: translate(-13%, -8%);
+    -webkit-transform: translate(-13%, -8%);
+    transform: translate(-13%, -8%);
+  }
+  10% {
+    -moz-transform: translate(4%, 2%);
+    -ms-transform: translate(4%, 2%);
+    -webkit-transform: translate(4%, 2%);
+    transform: translate(4%, 2%);
+  }
+  20% {
+    -moz-transform: translate(14%, -27%);
+    -ms-transform: translate(14%, -27%);
+    -webkit-transform: translate(14%, -27%);
+    transform: translate(14%, -27%);
+  }
+  30% {
+    -moz-transform: translate(-13%, -8%);
+    -ms-transform: translate(-13%, -8%);
+    -webkit-transform: translate(-13%, -8%);
+    transform: translate(-13%, -8%);
+  }
+  40% {
+    -moz-transform: translate(4%, 2%);
+    -ms-transform: translate(4%, 2%);
+    -webkit-transform: translate(4%, 2%);
+    transform: translate(4%, 2%);
+  }
+  50% {
+    -moz-transform: translate(-13%, -8%);
+    -ms-transform: translate(-13%, -8%);
+    -webkit-transform: translate(-13%, -8%);
+    transform: translate(-13%, -8%);
+  }
+  60% {
+    -moz-transform: translate(14%, -27%);
+    -ms-transform: translate(14%, -27%);
+    -webkit-transform: translate(14%, -27%);
+    transform: translate(14%, -27%);
+  }
+  70% {
+    -moz-transform: translate(4%, 2%);
+    -ms-transform: translate(4%, 2%);
+    -webkit-transform: translate(4%, 2%);
+    transform: translate(4%, 2%);
+  }
+  80% {
+    -moz-transform: translate(-13%, -8%);
+    -ms-transform: translate(-13%, -8%);
+    -webkit-transform: translate(-13%, -8%);
+    transform: translate(-13%, -8%);
+  }
+  90% {
+    -moz-transform: translate(14%, -27%);
+    -ms-transform: translate(14%, -27%);
+    -webkit-transform: translate(14%, -27%);
+    transform: translate(14%, -27%);
+  }
+}
+
+noise {
+  position: relative;
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+noise > * {
+  z-index: 2;
+}
+
+noise:after {
+  position: absolute;
+  display: block;
+
+  left: -100%;
+  top: -100%;
+  z-index: 1;
+
+  width: 300%;
+  height: 300%;
+
+  opacity: 0.05;
+
+  animation: grain 0.5s steps(10) infinite;
+
+  background-image: url("../image/noise.png");
+  content: "";
+}

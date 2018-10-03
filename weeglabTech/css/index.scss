@@ -1,0 +1,312 @@
+//FONTS
+@font-face {
+    font-family: 'MplusBlack';
+    src: url('../fonts/Mplus1p-Black.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Mplus1p-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Mplus1p-Black.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/Mplus1p-Black.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/Mplus1p-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'MplusLight';
+    src: url('../fonts/Mplus1p-Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Mplus1p-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Mplus1p-Light.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/Mplus1p-Light.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/Mplus1p-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'MplusThin';
+    src: url('../fonts/Mplus1p-Thin.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Mplus1p-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Mplus1p-Thin.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/Mplus1p-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/Mplus1p-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+// VARIABLES
+
+//COLORS
+$interactive-color: #b0a283;
+$content-color-light: #d2d2d2;
+$title-color-light: #f2f2f2;
+
+//FONT-STYLES
+$mainTitle: 40px;
+$title: 24px;
+$content: 20px;
+$contentSmall: 16px;
+
+// ---------------------------- RESET ----------------------------
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  text-decoration: none;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+	line-height: 1;
+	color: $content-color-light;
+
+  //background color
+  //background image
+  //background: url(../images/mainBackground/placeholder.png) no-repeat center center fixed;
+  //background-size: cover;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// ---------------------------- RESET ----------------------------
+
+// TYPO
+
+.contentText {
+  font-size: 14px;
+}
+
+.titleText {
+  font-size: 30px;
+}
+
+.subtitleText {
+  font-size: 21px;
+}
+
+.tooltipText {
+  font-size: 13px;
+}
+
+.tinyText {
+  font-size: 10px;
+}
+
+.bold {
+  font-family: MplusBlack;
+}
+
+.light {
+  font-family: MplusLight;
+}
+
+.thin {
+  font-family: MplusThin;
+}
+
+// DIVS
+
+body {
+  background-color: black;
+
+  // regular typo
+  font-family: MplusLight;
+  font-size: 13px;
+
+  user-select: none;
+}
+
+#content {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+}
+
+//RESOLUTION WIDTH 1920
+@media screen and (max-width: 1920px) {
+  #contentField {
+    position: relative;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 1704px;
+    height: 704px;
+  }
+}
+
+//RESOLUTION WIDTH 1600
+@media screen and (max-width: 1600px) {
+  #contentField {
+    position: relative;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 1304px;
+    height: 704px;
+  }
+}
+
+//RESOLUTION WIDTH 1280
+@media screen and (max-width: 1280px) {
+  #contentField {
+    position: relative;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 1104px;
+    height: 504px;
+  }
+}
+
+//RESOLUTION WIDTH 1024
+@media screen and (max-width: 1024px) {
+  #contentField {
+    position: relative;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 704px;
+    height: 504px;
+  }
+}
+
+#header {
+  position: relative;
+
+  width: 100%;
+  height: 100px;
+
+  border-top: 1px solid rgba(white, 0.04);
+}
+
+#batteryContainer {
+  position: relative;
+
+  margin-top: 18px;
+
+  width: auto;
+  height: auto;
+}
+
+#batteryStatus {
+  position: relative;
+
+  width: 220px;
+
+  padding-bottom: 5px;
+  margin-bottom: 4px;
+
+  border-bottom: 1px dotted rgba(white, 0.15);
+}
+
+.batteryCellContainer {
+  position: relative;
+  display: inline-block;
+
+  margin-right: -4px;
+  margin-bottom: -1px;
+  margin-left: 1px;
+
+  border: 1px solid rgba(white, 0.45);
+}
+
+.batteryCell {
+  position: relative;
+
+  width: 4px;
+  height: 4px;
+
+  margin: 1px;
+  box-sizing: border-box;
+  border: 1px solid rgba(white, 0.75);
+}
+
+#batteryStatusText {
+  position: relative;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0%;
+
+  width: 100%;
+  height: 100px;
+
+  border-bottom: 1px solid rgba(white, 0.04);
+}
+
+#systemContainer {
+  position: relative;
+  left: 0px;
+
+  box-sizing: border-box;
+  padding-top: 55px;
+
+  width: auto;
+  height: auto;
+}
+
+#middle {
+  position: relative;
+
+  width: 100%;
+  height: calc(100% - 200px);
+
+
+  box-sizing: border-box;
+
+  border-top: 1px dotted rgba(white, 0);
+  border-left: 1px dotted rgba(white, 0);
+  background-image: url("../image/pattern25x25.png"),url("../image/pattern50x50.png"),url("../image/pattern100x100.png");
+}
+
+#interactiveContent {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}

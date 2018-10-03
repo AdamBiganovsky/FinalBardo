@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>WEEGLAB TECH</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/noise.css">
+
+</head>
+
+<body>
+  <noise>
+    <div id="content">
+      <div id="contentField">
+
+        <div id="header">
+          <!-- BATTERY -->
+          <div id="batteryContainer">
+
+            <div id="batteryStatus">
+
+              <div class="batteryCellContainer">
+                <div class="batteryCell"></div>
+                <div class="batteryCell"></div>
+              </div>
+              <div class="batteryCellContainer">
+                <div class="batteryCell"></div>
+                <div class="batteryCell"></div>
+              </div>
+              <div class="batteryCellContainer">
+                <div class="batteryCell"></div>
+                <div class="batteryCell"></div>
+              </div>
+              <div class="batteryCellContainer">
+                <div class="batteryCell"></div>
+                <div class="batteryCell"></div>
+              </div>
+
+              <div id="batteryStatusText">
+              <span class="tinyText bold">
+                <!--  Timer Component  -->
+                  {{ countdown }}
+                <!--  End! Timer Component  -->
+                </span>
+              </div>
+
+            </div>
+
+            <span class="tinyText">POWER SOURCE - <span class="bold">サンドイッチ<span class="tinyText">v2</span></span></span>
+            <br>
+            <span class="tinyText">MAX CAPACITY - 3:25:00</span>
+
+          </div>
+
+        </div>
+
+        <div id="middle">
+          <div id="interactiveContent">
+
+
+          </div>
+        </div>
+
+        <div id="footer">
+
+          <div id="systemContainer">
+            <span class="contentText">アルファベット-system <span class="tinyText">v1.2.9977:002</span></span>
+            <br>
+            <span class="tinyText bold">{{ date }}</span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </noise>
+</body>
+
+<!-- SCRIPTS IMPORT -->
+<script src="js/vue.js"></script>
+<script src="js/consistentMenu/countdown.js"></script>
+<script src="js/consistentMenu/date.js"></script>
+
+</html>
