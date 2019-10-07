@@ -4,17 +4,23 @@
 <head>
   <meta charset="utf-8">
 
-  <title>WEEGLAB TECH</title>
+  <title>WG37</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/noise.css">
-
+  <link rel="stylesheet" href="css/initAnimation.css">
 </head>
 
 <body>
-  <noise>
+    <!-- here are effects -->
+    <noise></noise>
+    <div id="anim"></div>
+    <div id="displayVignette"></div>
+    <div id="displayMap"></div>
+
+    <!-- here is content -->
     <div id="content">
       <div id="contentField">
 
@@ -53,8 +59,30 @@
 
             <span class="tinyText">POWER SOURCE - <span class="bold">サンドイッチ<span class="tinyText">v2</span></span></span>
             <br>
-            <span class="tinyText">MAX CAPACITY - 3:25:00</span>
+            <span class="tinyText">MAX CAPACITY - ::25:00:00</span>
 
+          </div>
+          <!-- ADDONS -->
+          <div id="addonsContainer">
+            <div id="addonsStatus">
+              <span class="contentText bold">PROCESSING</span>
+              <br>
+              <span class="tinyText">TRAVELING ... X-224</span>
+            </div>
+            <div id="addons">
+              <div class="addonSlot">
+                <!-- THIS WILL BE MOVED TO TEMPLATE -->
+                <div class="addonIcon">
+                  <img src="image/svg/consistentMenu/addons/downloadIcon.svg">
+                </div>
+                <div class="addonStatus">
+                  <div class="addonDownloadStatus"></div>
+                </div>
+                <div class="addonStatusText">
+                  <span class="tinyText">65%</span>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -62,28 +90,30 @@
         <div id="middle">
           <div id="interactiveContent">
 
-
           </div>
         </div>
 
         <div id="footer">
 
           <div id="systemContainer">
-            <span class="contentText">アルファベット-system <span class="tinyText">v1.2.9977:002</span></span>
+            <span class="contentText">人類.SYSTEM<span class="tinyText">v1.2.9977:002</span></span>
             <br>
             <span class="tinyText bold">{{ date }}</span>
+            <br>
+            <span class="tinyText">{{ client }}</span>
           </div>
 
         </div>
 
       </div>
     </div>
-  </noise>
+
 </body>
 
 <!-- SCRIPTS IMPORT -->
 <script src="js/vue.js"></script>
 <script src="js/consistentMenu/countdown.js"></script>
-<script src="js/consistentMenu/date.js"></script>
+<script src="js/consistentMenu/system.js"></script>
+
 
 </html>
