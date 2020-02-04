@@ -228,12 +228,12 @@ button.navMenu.highlight {
 
 	box-sizing: border-box;
 
-	background-color: rgba(black, 0.5);
+	background-color: rgba(pink, 1);
 
   color: $title-color-light;
   font-family: BebasNeue;
   font-size: $title;
-  z-index: 2;
+  z-index: 1;
 }
 
 //CONTENT
@@ -304,8 +304,8 @@ button.navMenu.highlight {
 
 .product-container.backgroundRepeat {
   background-repeat: repeat;
-  background-position: left;
-    background-size: auto;
+  background-position: center;
+  background-size: auto;
 }
 
 #homepage {
