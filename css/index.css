@@ -156,7 +156,8 @@ button.navMenu.highlight {
   background-color: rgba(0, 0, 0, 0.5);
   color: #f2f2f2;
   font-family: BebasNeue;
-  font-size: 24px; }
+  font-size: 24px;
+  z-index: 2; }
 
 #content-container {
   position: relative;
@@ -192,11 +193,15 @@ button.navMenu.highlight {
   transform: translate(-50%, -50%); }
 
 .textContent {
-  padding-top: 3px; }
+  padding: 5px;
+  padding-bottom: 8px;
+  background-color: black; }
 
 .textTitle {
   display: inline-block;
-  width: 300px; }
+  width: 300px;
+  background-color: black;
+  padding-bottom: 10px; }
 
 .product-container {
   position: relative;
@@ -204,7 +209,15 @@ button.navMenu.highlight {
   width: 100%;
   height: 100%;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.product-container.backgroundRepeat {
+  background-repeat: repeat;
+  background-position: left;
+  background-size: auto; }
 
 #homepage {
   position: absolute;

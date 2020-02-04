@@ -233,6 +233,7 @@ button.navMenu.highlight {
   color: $title-color-light;
   font-family: BebasNeue;
   font-size: $title;
+  z-index: 2;
 }
 
 //CONTENT
@@ -274,13 +275,18 @@ button.navMenu.highlight {
 }
 
 .textContent {
-  padding-top: 3px;
+  padding: 5px;
+  padding-bottom: 8px;
+
+  background-color: black;
 }
 
 .textTitle {
   display: inline-block;
 
   width: 300px;
+  background-color: black;
+  padding-bottom: 10px;
 }
 
 .product-container {
@@ -291,6 +297,15 @@ button.navMenu.highlight {
   height: 100%;
 
   box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.product-container.backgroundRepeat {
+  background-repeat: repeat;
+  background-position: left;
+    background-size: auto;
 }
 
 #homepage {

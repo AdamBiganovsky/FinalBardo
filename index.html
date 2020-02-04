@@ -64,17 +64,21 @@
 
               <!-- PRODUCTS -->
                 <div id="products" v-bind:style="styleProducts">
-                  <!-- THE BOX -->
-                  <div class="product-container">
-                    <div class="textContent-container Center">
-                      <div class="textTitle">
-                        <!-- <span class="mainTitle"> THE BOX </span> -->
-                      </div>
-                      <div class="textContent">
-                        <!-- <span class="content">COMING IN 2019</span> -->
+                  <!-- meow -->
+                  <a href="https://www.instagram.com/a/r/?effect_id=910348759311204" target="_blank">
+                    <div class="product-container backgroundRepeat" style="background-image: url(images/projectBackground/maow/mainBackground.png)">
+                      <div class="textContent-container Center">
+                        <div class="textTitle">
+                          <span class="mainTitle">Meow</span>
+                        </div>
+                        <div class="textContent">
+                          <span class="content">Let them meow</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
+
+
                 </div>
 
               <!-- OUTSOURCE
@@ -127,14 +131,6 @@
 
             </div>
 
-            <!--
-            <a href="blog.html" target="_blank">
-            <div id="newsletters-container">
-              CHECK OUR BLOG
-            </div>
-            </a>
-            -->
-
         </div>
 
     </body>
@@ -151,18 +147,22 @@ el: '#app',
 
         styleProducts: {
             opacity: '0',
+            zIndex: 'auto',
         },
 
         styleOutsource: {
             opacity: '0',
+            zIndex: 'auto',
         },
 
         styleContact: {
             opacity: '0',
+            zIndex: 'auto',
         },
 
         styleHomepage: {
             opacity: '1',
+            zIndex: '1',
         },
     },
 
@@ -172,7 +172,11 @@ el: '#app',
           this.styleHomepage.opacity = '1',
           this.styleProducts.opacity = '0',
           this.styleOutsource.opacity = '0',
-          this.styleContact.opacity = '0'
+          this.styleContact.opacity = '0',
+          this.styleHomepage.zIndex = '1',
+          this.styleProducts.zIndex = 'auto',
+          this.styleOutsource.zIndex = 'auto',
+          this.styleContact.zIndex = 'auto'
         }
       },
 
@@ -181,7 +185,11 @@ el: '#app',
           this.styleHomepage.opacity = '0',
           this.styleProducts.opacity = '1',
           this.styleOutsource.opacity = '0',
-          this.styleContact.opacity = '0'
+          this.styleContact.opacity = '0',
+          this.styleHomepage.zIndex = 'auto',
+          this.styleProducts.zIndex = '1',
+          this.styleOutsource.zIndex = 'auto',
+          this.styleContact.zIndex = 'auto'
         }
       },
 
@@ -190,7 +198,11 @@ el: '#app',
           this.styleHomepage.opacity = '0',
           this.styleProducts.opacity = '0',
           this.styleOutsource.opacity = '1',
-          this.styleContact.opacity = '0'
+          this.styleContact.opacity = '0',
+          this.styleHomepage.zIndex = 'auto',
+          this.styleProducts.zIndex = 'auto',
+          this.styleOutsource.zIndex = '1',
+          this.styleContact.zIndex = 'auto'
         }
       },
 
@@ -199,7 +211,11 @@ el: '#app',
           this.styleHomepage.opacity = '0',
           this.styleProducts.opacity = '0',
           this.styleOutsource.opacity = '0',
-          this.styleContact.opacity = '1'
+          this.styleContact.opacity = '1',
+          this.styleHomepage.zIndex = 'auto',
+          this.styleProducts.zIndex = 'auto',
+          this.styleOutsource.zIndex = 'auto',
+          this.styleContact.zIndex = '1'
         }
       },
 
