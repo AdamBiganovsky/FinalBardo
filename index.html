@@ -21,28 +21,6 @@
                         <img src="images/header/logo.svg" @click="selected = 0; selectedHomepage()" :class="{highlight:selected == 0}">
                     </div>
                 </div>
-
-                <!-- social menu -->
-                <div id="header-right-container">
-                  <!-- WG37 -->
-                  <div class="icon-container margin-left">
-                    <a href="weeglabTech/consistentMenu.html" target="_blank">
-                      <span class="content">[ WG37 ]</span>
-                    </a>
-                  </div>
-                  <!-- FACEBOOK ICO -->
-                    <div class="icon-container margin-left socialIcon">
-                      <a href="https://www.facebook.com/FinalBardo-176746602994912/" target="_blank">
-                        <img src="images/header/facebook_ico.svg">
-                      </a>
-                    </div>
-                    <!-- TWITTER ICO -->
-                    <div class="icon-container margin-left socialIcon">
-                        <a href="https://twitter.com/FinalBardo" target="_blank">
-                          <img src="images/header/twitter_ico.svg">
-                        </a>
-                    </div>
-                </div>
             </div>
 
             <!-- CONTENT -->
@@ -56,7 +34,7 @@
                         <span class="mainTitle"> MEANINGFUL FUN </span>
                       </div>
                       <div class="textContent">
-                        <span class="content">[ ART, DESIGN, STORYTELLING ]</span>
+                        <span class="content">[ ART, DESIGN, PHILOSOPHY ]</span>
                       </div>
                     </div>
                   </div>
@@ -64,20 +42,6 @@
 
               <!-- PRODUCTS -->
                 <div id="products" v-bind:style="styleProducts">
-                  <!-- meow -->
-                  <a href="https://www.instagram.com/a/r/?effect_id=910348759311204" target="_blank">
-                    <div class="product-container backgroundRepeat" style="background-image: url(images/projectBackground/maow/mainBackground.png)">
-                      <div class="textContent-container Center">
-                        <div class="textTitle">
-                          <span class="mainTitle">Meow</span>
-                        </div>
-                        <div class="textContent">
-                          <span class="content">Let them meow</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-
 
                 </div>
 
@@ -105,19 +69,7 @@
 
               <!-- CONTACT -->
                 <div id="contact" v-bind:style="styleContact">
-                  <div class="textContent-container Center">
-                    <div class="textTitle">
-                      <span class="mainTitle"> GET IN TOUCH </span>
-                    </div>
-                    <div class="textContent">
-                      <span class="content">If you wish you can contact us at</span>
-                      <br>
-                      <span class="content interactiveColor"> finalbardo@gmail.com </span>
-                      <br>
 
-                    </div>
-
-                  </div>
                 </div>
 
             </div>
@@ -125,9 +77,9 @@
             <!-- nav menu -->
             <div id="nav-menu-container">
 
-                <button @click="selected = 1; selectedProducts()" :class="{navMenu, highlight:selected == 1}">PRODUCTS</button>
+          <!--  <button @click="selected = 1; selectedProducts()" :class="{navMenu, highlight:selected == 1}">PRODUCTS</button> -->
           <!--  <button @click="selected = 2; selectedOutsource()" :class="{navMenu, highlight:selected == 2}">OUTSOURCE</button> -->
-                <button @click="selected = 3; selectedContact()" :class="{navMenu, highlight:selected == 3}">CONTACT</button>
+          <!--  <button @click="selected = 3; selectedContact()" :class="{navMenu, highlight:selected == 3}">CONTACT</button> -->
 
             </div>
 
